@@ -1,0 +1,192 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, darkslateblue, #ffffff); /* Gradient with #1A5319 */
+    background-attachment: fixed; /* Keep the gradient fixed */
+    color: #333;
+}
+
+header {
+    background: darkslateblue;
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: darkslateblue;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white; /* Solid background for main content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+    
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between images */
+    margin-bottom: 20px; /* Space below images */
+}
+.image-gallery-2 {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between images */
+    margin-bottom: 20px; /* Space below images */
+}
+
+.homepage-image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.homepage-image:hover {
+    transform: scale(1.05);
+}
+
+.highlights {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+}
+
+.highlights li {
+    background: darkslateblue; /* Highlight color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h2, h3, p, ul {
+    color: darkslateblue; /* Consistent text color */
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Space above the form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Border for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    background-color: #f9f9f9; /* Light background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: darkslateblue; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkslateblue; /* Darker green on hover */
+}
+
+.logo{
+    width: 100px;
+}
+
+.welcome{
+    font-size: 30px;
+}
